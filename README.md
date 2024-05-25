@@ -4,11 +4,11 @@ This project adopts Autogen multi-agents, comprising 5 assistant agents alongsid
 ## Requirement Specification
 - Python Version: We are utilizing Python version 3.10 (64-bit)
 - Pip Install:
-- ```bash
+  ```bash
   pip install pyautogen
 - LM Studio: LM Studio is an easy-to-use desktop app for experimenting with local and open-source Large Language Models (LLMs).
 - Download LM Studio
-- 
+
 ## System Design
 Configuration and Initialization
 The system's architecture revolves around the following key components:
@@ -20,7 +20,7 @@ The system's architecture revolves around the following key components:
 - Attractions: Suggests local attractions and activities.
 - TravelPlanner: Proposes comprehensive travel plans based on inputs from other agents.
 - Critic: Reviews the travel plan to ensure it meets the traveler's needs.
-- 
+  
 ## Code Structure
 - Import necessary modules from Autogen.
 - Define the configuration for the LLMs including API base, type, and key.
@@ -33,16 +33,16 @@ The system's architecture revolves around the following key components:
 ```bash
  pip install pyautogen
 ```
--Download and Setup LM Studio:
+- Download and Setup LM Studio:
 ### Follow the instructions to download and set up LM Studio.
 
--Run the Script:
+- Run the Script:
 Execute the provided Python script to start the multi-agent travel recommendation system.
 
--Important Notes
--Ensure LM Studio is properly configured and running locally to enable communication with the open-source LLMs.
--The UserProxyAgent's human_input_mode is set to "NEVER" to automate responses based on predefined satisfaction criteria.
--The GroupChatManager orchestrates the interactions among the agents, ensuring a cohesive and well-rounded travel recommendation is generated.
--The system is designed to handle up to 500 interaction rounds to refine and finalize the travel plan.
--By leveraging specialized assistant agents and local LLMs, this system provides a robust framework for generating comprehensive and personalized travel recommendations.
+- Important Notes
+- Ensure LM Studio is properly configured and running locally to enable communication with the open-source LLMs.
+- The UserProxyAgent's human_input_mode is set to "NEVER" to automate responses based on predefined satisfaction criteria.
+- The GroupChatManager orchestrates the interactions among the agents, ensuring a cohesive and well-rounded travel recommendation is generated.
+- The system is designed to handle up to 500 interaction rounds to refine and finalize the travel plan.
+- By leveraging specialized assistant agents and local LLMs, this system provides a robust framework for generating comprehensive and personalized travel recommendations.
 
